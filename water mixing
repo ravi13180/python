@@ -1,0 +1,18 @@
+t = int(input())
+for _ in range(t):
+    A, B, X, Y = map(int, input().split())
+
+    if A == B:
+        print("YES")
+    elif B > A:
+        if X >= (B - A):
+            print("YES")
+        else:
+            print("NO")
+    else:  # B < A
+        if Y >= (A - B):
+            print("YES")
+        else:
+            print("NO")
+
+            
